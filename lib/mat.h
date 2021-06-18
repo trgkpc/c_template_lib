@@ -187,8 +187,8 @@
                                                                                                        \
     void change_smat_##type(smat_##type Mat, int i, int j, T value)                                    \
     { /* 遅い */                                                                                     \
-        LIB_DEBUG_LOG("change smat " #type " start. (%d,%d)=" PRNIT_FORMAT "\n", i, j, value);         \
-        pair_##type p;                                                                                 \
+        /*LIB_DEBUG_LOG("change smat " #type " start. (%d,%d)=" PRNIT_FORMAT "\n", i, j, value);         \
+        */pair_##type p;                                                                                 \
         p.id = j;                                                                                      \
         p.value = value;                                                                               \
         slist_pair_##type collum = *array_slist_pair_##type##_at(Mat->value, i);                       \
